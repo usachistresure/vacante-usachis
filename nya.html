@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usachis ₊˚⊹♡ Búsqueda Navideña</title>
+    <style>
+        :root {
+            --pink-bg: #ffd1dc;
+            --pink-card: #fff9fb;
+            --pink-accent: #ffb3c6;
+            --pink-dark: #ff5c8d;
+            --pink-text: #6b4c58;
+            --border-radius: 24px;
+        }
+
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--pink-bg);
+            background-image: 
+                radial-gradient(#ffb3c6 1.5px, transparent 1.5px),
+                radial-gradient(#ffb3c6 1.5px, var(--pink-bg) 1.5px);
+            background-size: 60px 60px;
+            background-position: 0 0, 30px 30px;
+            color: var(--pink-text);
+            margin: 0;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .top-gif-container {
+            width: 100%;
+            max-width: 700px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+
+        .top-gif-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: var(--pink-card);
+            border-radius: var(--border-radius);
+            box-shadow: 0 12px 30px rgba(255, 143, 171, 0.4);
+            border: 3px solid #ffccd5;
+            padding: 35px 30px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        .container::before {
+            content: "🎀";
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.8rem;
+        }
+
+
+        .container::after {
+            content: "🧸";
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            font-size: 1.8rem;
+        }
+
+
+        header {
+            text-align: center;
+            border-bottom: 2px dashed #ffb3c6;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+
+        header h1 {
+            color: var(--pink-dark);
+            font-size: 2.6rem;
+            margin: 0;
+            text-shadow: 1px 1px 0px #fff;
+        }
+
+
+        header p {
+            font-size: 1.1rem;
+            color: #8c6875;
+            margin-top: 6px;
+        }
+
+
+        .badge {
+            background-color: var(--pink-dark);
+            color: white;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            box-shadow: 0 3px 8px rgba(255, 92, 141, 0.3);
+        }
+
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            background-color: #ffe6ed;
+            padding: 18px;
+            border-radius: 16px;
+            margin-top: 20px;
+            border: 1px solid #ffccd5;
+        }
+
+
+        .detail-item {
+            text-align: center;
+        }
+
+
+        .detail-item strong {
+            color: var(--pink-dark);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+
+        h2 {
+            color: var(--pink-dark);
+            font-size: 1.25rem;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+
+        ul li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+
+        ul li::before {
+            content: "🌸";
+            position: absolute;
+            left: 0;
+            font-size: 0.9rem;
+        }
+
+
+        .apply-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: var(--pink-dark);
+            color: white;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 16px;
+            font-weight: bold;
+            font-size: 1.15rem;
+            margin-top: 35px;
+            box-sizing: border-box;
+            box-shadow: 0 6px 15px rgba(255, 92, 141, 0.4);
+            transition: all 0.2s ease-in-out;
+        }
+
+
+        .apply-btn:hover {
+            background-color: #ff3b75;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(255, 92, 141, 0.5);
+        }
+
+
+        .bottom-gif-container {
+            width: 100%;
+            max-width: 700px;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+
+        .bottom-gif-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- GIF superior: cat.png -->
+<div class="top-gif-container">
+    <img src="cat.png" alt="Nyan Cat">
+</div>
+
+
+<div class="container">
+    <header>
+        <span class="badge">🎄 CONVOCATORIA NAVIDEÑA 🎄</span>
+        <h1>usachis ₊˚⊹♡</h1>
+        <p>Búsqueda laboral: Vendedora de Tienda de Peluches ✨</p>
+    </header>
+
+
+    <div class="details-grid">
+        <div class="detail-item">
+            <strong>📅 Período</strong>
+            Noviembre a Enero
+        </div>
+        <div class="detail-item">
+            <strong>⏰ Horarios</strong>
+            16:30 hs a 21:00 hs
+        </div>
+        <div class="detail-item">
+            <strong>🗓️ Jornada</strong>
+            Lunes a Sábados
+        </div>
+    </div>
+
+
+    <h2>🐾 Requisitos del puesto</h2>
+    <ul>
+        <li>Edad: Entre 20 y 40 años.</li>
+        <li>Secundario completo (excluyente).</li>
+        <li>Experiencia previa en ventas y atención al cliente.</li>
+        <li>Gran conocimiento en franquicias de anime, caricaturas y dibujos animados.</li>
+        <li>Ganas de trabajar en equipo y buena predisposición.</li>
+        <li>Manejo activo de redes sociales.</li>
+    </ul>
+
+
+    <h2>📋 Dinámica y tareas a realizar</h2>
+    <ul>
+        <li>Atención en el local y cobro a clientes en caja.</li>
+        <li>Respuesta y seguimiento de consultas en redes sociales cuando la caja esté libre.</li>
+        <li>Atención continua y presencia en las redes sociales de la tienda.</li>
+        <li>Cierre de caja a las 21:00 hs.</li>
+        <li>Planilla de Excel: registro de ingresos y egresos diarios.</li>
+    </ul>
+
+
+    <a href="https://www.instagram.com/usachistresure" target="_blank" rel="noopener noreferrer" class="apply-btn">
+        ✨ ¡Postularme vía Instagram! (@usachistresure) ♡
+    </a>
+</div>
+
+
+<!-- GIF inferior: fresa.png -->
+<div class="bottom-gif-container">
+    <img src="fresa.png" alt="Borde de frutillas">
+</div>
+
+
+</body>
+</html>
